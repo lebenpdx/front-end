@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('load', function () {
   const body = document.querySelector('body');
   const backgroundIntervalInput = document.getElementById(
     'backgroundIntervalInput'
@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
     return color;
   }
 
+  const initialInterval = 3000;
+  backgroundIntervalInput.value = (initialInterval / 1000).toString();
+
   startStopButton.addEventListener('click', function () {
     if (!isChanging) {
       const interval = parseInt(backgroundIntervalInput.value) * 1000;
@@ -39,4 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
       isChanging = false;
     }
   });
+
+  startStopButton.click();
 });
