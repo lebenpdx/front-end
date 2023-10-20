@@ -10,9 +10,9 @@ document.getElementById('form').addEventListener('submit', function (event) {
   ).map((c) => c.value);
   const anythingElse = document.getElementById('anythingElse').value;
 
-  console.log('Full Name: ' + fullName);
-  console.log('Email: ' + email);
-  console.log('Registration Status: ' + registrationStatus);
-  console.log('Courses: ' + courses.join(', '));
-  console.log('Anything Else: ' + anythingElse);
+  console.log(`Full Name: ${fullName}`);
+  console.log(`Email: ${email}`);
+  console.log(`Registration Status: ${registrationStatus}`);
+  console.log(`Courses: ${courses.join(', ')}`);
+  console.log(`Anything Else: ${anythingElse}`);
 });
