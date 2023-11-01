@@ -17,3 +17,35 @@ h1 {
   border-radius: 0.8rem;
   background-color: var(--white);
 }
+
+/* For 01-Characters*/
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.2s;
+  background-color: inherit;
+  border: none;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card.hovered {
+  background-color: darkslateblue;
+  color: white;
+}
+
+body {
+  background-color: cyan;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
